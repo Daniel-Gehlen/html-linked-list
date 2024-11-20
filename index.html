@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+        <h1>Linked List Visualization</h1>
+        <button id="translate-button">Traduzir para Português</button>
+        <button id="nivel-2-button">Modo Nível 2 (Pseudo-código)</button>
+        <div class="input-area">
+            <input type="text" id="input-value" placeholder="Enter a value">
+            <button id="add-first">Add First</button>
+            <button id="add-last">Add Last</button>
+            <button id="add-at">Add At</button>
+        </div>
+        <div class="input-area">
+            <button id="remove-first">Remove First</button>
+            <button id="remove-last">Remove Last</button>
+            <button id="remove-at">Remove At</button>
+        </div>
+        <div class="input-area">
+            <button id="get-at">Get At</button>
+            <button id="contains">Contains</button>
+            <button id="clear">Clear</button>
+        </div>
+        <div class="message-area">
+            <div class="message"></div>
+            <div class="guide">
+                <h2>How to use:</h2>
+                <ol>
+                    <li>Enter a value in the input field.</li>
+                    <li>Click the "Add First", "Add Last", or "Add At" buttons to add the value to the linked list.</li>
+                    <li>Click the "Remove First", "Remove Last", or "Remove At" buttons to remove elements from the
+                        list.</li>
+                    <li>Click the "Get At" button to retrieve the value at a specific index.</li>
+                    <li>Click the "Contains" button to check if the list contains a specific value.</li>
+                    <li>Click the "Clear" button to remove all elements from the list.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="list-area">
+            <div class="list-container"></div>
+        </div>
+        <div class="nivel-2-area" style="display: none;">
+            <h2>Modo Nível 2: Pseudo-código</h2>
+            <div class="command-area">
+                <input type="text" id="pseudo-command" placeholder="Digite o comando (ex: ADICIONAR_INICIO 10)">
+                <button id="execute-command">Executar Comando</button>
+            </div>
+            <div class="instructions">
+                <h3>Instruções</h3>
+                <p>Comandos disponíveis:</p>
+                <ul>
+                    <li><code>ADICIONAR_INICIO [valor]</code> - Adiciona o valor ao início da lista</li>
+                    <li><code>ADICIONAR_FIM [valor]</code> - Adiciona o valor ao fim da lista</li>
+                    <li><code>REMOVER_INICIO</code> - Remove o primeiro valor</li>
+                    <li><code>REMOVER_FIM</code> - Remove o último valor</li>
+                    <li><code>OBTER [índice]</code> - Exibe o valor no índice especificado</li>
+                    <li><code>CONTER [valor]</code> - Verifica se o valor está na lista</li>
+                    <li><code>LIMPAR</code> - Limpa todos os valores da lista</li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
